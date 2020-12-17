@@ -55,6 +55,7 @@ a {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+
   color: var(--logo-color);
 }
 
@@ -88,6 +89,7 @@ a {
 .auth-nav {
   padding-top: 32px;
   padding-bottom: 32px;
+
   color: var(--primeri-text-color);
 }
 .auth-nav:hover,
@@ -100,6 +102,9 @@ a {
   background: var(--footer-color);
 }
 .hero-name {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -110,16 +115,15 @@ a {
   color: var(--hero-color);
 }
 .hero-button {
+  display: flex;
+  margin: auto;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 
   color: var(--hero-color);
-
   background: var(--accent-color);
   box-shadow: 0px 4px 4px var(--button-color);
   border-radius: 4px;
@@ -133,10 +137,32 @@ a {
   height: 1px;
   margin: -1px;
 }
+.features-item {
+  display: flex;
+  padding: 0;
+  width: 1170px;
+}
+.features-list {
+  width: 270px;
+  margin: 94px 0;
+}
+.features-list:not(:first-child) {
+  margin-left: 20px;
+}
 .features-name {
   font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.features-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 .features-text .footer {
   font-weight: 400;
@@ -146,6 +172,22 @@ a {
   color: var(--primeri-text-color);
 }
 /* Чем мы занимаемся */
+.projects {
+  width: 1170px;
+}
+.projects-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.projects-item {
+  display: flex;
+  padding: 0;
+  margin-bottom: 94px;
+}
+.project-list:not(:last-child) {
+  margin-right: 20px;
+}
+
 .projects-title,
 .command-title {
   font-weight: 700;
@@ -163,10 +205,25 @@ a {
 
   background-color: var(--filter-button);
 }
+.command-title {
+  margin-top: 94px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.command-list {
+  display: flex;
+  padding-left: 0;
+}
+.command-item:not(:last-child) {
+  margin-right: 20px;
+}
 .command-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
 }
 .command-profession {
+  margin-bottom: 30px;
   font-weight: 400;
 
   color: var(--primeri-text-color);
