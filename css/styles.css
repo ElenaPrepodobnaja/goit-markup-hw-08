@@ -8,6 +8,7 @@
   --contacts-color: rgba(255, 255, 255, 0.6);
   --logo-color: #030303;
   --button-color: rgba(0, 0, 0, 0.15);
+  --nav-border-color: #ececec;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -21,13 +22,32 @@ body {
 }
 ul {
   list-style: none;
+  padding: 0;
 }
 a {
   text-decoration: none;
 }
 
 /* header */
+.heading {
+  border: 1px solid var(--nav-border-color);
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.navigation,
+.contacts-nav,
+.site-nav {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
 .logo-nav {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-right: 93px;
   font-family: "Raleway", sans-serif;
   font-style: 400;
   font-weight: 700;
@@ -39,6 +59,13 @@ a {
 .logo-web {
   color: var(--accent-color);
 }
+/* ul.site-nav: {
+  padding-top: 32px;
+  padding-bottom: 32px;
+} */
+/* .site-nav:not(:last-child) {
+  margin-right: 50px;
+} */
 .site-nav a {
   color: var(--title-text-color);
 }
@@ -88,6 +115,13 @@ a {
 }
 
 /* Особенности */
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 .features-name {
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -115,6 +149,8 @@ a {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+
+  background-color: var(--filter-button);
 }
 .command-name {
   font-weight: 500;
