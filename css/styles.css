@@ -331,6 +331,7 @@ a {
   padding-left: 0;
 }
 .project-li {
+  max-width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid var(--border-color);
@@ -342,7 +343,7 @@ a {
   margin-bottom: 0;
 }
 .project-foto {
-  width: 366px;
+  width: 370px;
   height: 292px;
 }
 .project-group {
