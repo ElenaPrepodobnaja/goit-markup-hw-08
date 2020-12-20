@@ -224,6 +224,9 @@ a {
   padding: 94px 0;
   background-color: var(--filter-button);
 }
+.command-item {
+  border-radius: 0px 0px 4px 4px;
+}
 .command-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -257,10 +260,11 @@ a {
 .footer .container {
   display: block;
   flex-wrap: wrap;
-  padding-top: 60px;
+  padding: 60px 0;
 }
 .logo-footer {
-  margin-bottom: 20px;
+  display: block;
+  padding-bottom: 20px;
   margin-right: auto;
 }
 .address {
@@ -279,7 +283,6 @@ a {
   margin-bottom: 9px;
 }
 .tel {
-  padding-bottom: 60px;
 }
 
 /* Портфолио */
@@ -304,8 +307,10 @@ a {
   outline: none;
   cursor: pointer;
   background: var(--filter-button);
+  border-radius: 4px;
 }
 .filter-text {
+  padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -343,7 +348,8 @@ a {
   margin-bottom: 0;
 }
 .project-foto {
-  width: 370px;
+  display: block;
+  width: 368px;
   height: 292px;
 }
 .project-group {
@@ -351,6 +357,7 @@ a {
 }
 .project-title {
   margin: 0;
+  padding-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
