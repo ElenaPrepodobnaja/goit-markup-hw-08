@@ -266,6 +266,13 @@ a {
   display: block;
   padding-bottom: 20px;
   margin-right: auto;
+  font-family: "Raleway", sans-serif;
+  font-style: 400;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  color: var(--hero-color);
 }
 .address {
   margin-right: auto;
@@ -371,15 +378,6 @@ a {
   letter-spacing: 0.03em;
 
   color: var(--primeri-text-color);
-}
-.logo-footer {
-  font-family: "Raleway", sans-serif;
-  font-style: 400;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-
-  color: var(--hero-color);
 }
 .contacts:hover,
 .contacts:focus {
