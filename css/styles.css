@@ -10,6 +10,7 @@
   --button-color: rgba(0, 0, 0, 0.15);
   --nav-border-color: #ececec;
   --border-color: #eeeeee;
+  --background-hero: #c4c4c4;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -103,10 +104,12 @@ a {
 
 /*Герой*/
 .hero-section {
+  width: 1600px;
+  height: 600px;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background: var(--footer-color);
+  background: var(--background-hero);
 }
 .hero-name {
   display: inline-block;
