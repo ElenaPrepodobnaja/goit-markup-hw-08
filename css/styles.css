@@ -11,6 +11,7 @@
   --nav-border-color: #ececec;
   --border-color: #eeeeee;
   --background-hero: #c4c4c4;
+  --background-color-hero: rgba(47, 48, 58, 0.4);
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -112,6 +113,8 @@ a {
   margin-left: auto;
   margin-right: auto;
   background: var(--background-hero);
+  background-image: url(../images/hero.jpg);
+  background-color: var(--background-color-hero);
 }
 .hero-name {
   /* display: inline-block; */
@@ -169,6 +172,19 @@ a {
 .features-list {
   width: 270px;
 }
+.features-list .icon-features {
+  content: "";
+  height: 120px;
+  width: 270px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--filter-button);
+  border-radius: 4px;
+}
+.icon-features {
+  padding: 25px 100px;
+}
+
 .features-list:not(:first-child) {
   margin-left: 20px;
 }
