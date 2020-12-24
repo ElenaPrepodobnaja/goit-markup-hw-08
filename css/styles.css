@@ -12,6 +12,7 @@
   --border-color: #eeeeee;
   --background-hero: #c4c4c4;
   --background-color-hero: rgba(47, 48, 58, 0.4);
+  --color-links: #afb1b8;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -92,6 +93,18 @@ a {
 .contacts-nav {
   margin-left: auto;
 }
+.nav-icon {
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.envelope {
+  width: 16px;
+}
+.smartphone {
+  width: 10px;
+}
+
 .auth-nav {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -279,6 +292,36 @@ a {
   font-weight: 400;
 
   color: var(--primeri-text-color);
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.link-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  max-width: 100%;
+  margin-right: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.link-icon:hover,
+.link-icon:focus {
+  fill: var(--hero-color);
+  background-color: var(--accent-color);
+}
+.instagram {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-links);
+}
+.instagram:hover,
+.instagram:focus {
+  fill: var(--hero-color);
 }
 /* Подвал */
 .footer {
