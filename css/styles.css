@@ -96,15 +96,16 @@ a {
   margin-left: auto;
 }
 .nav-icon {
-  height: 12px;
   margin-right: 10px;
   fill: currentColor;
 }
 .envelope {
   width: 16px;
+  height: 12px;
 }
 .smartphone {
   width: 10px;
+  height: 16px;
 }
 
 .auth-nav {
@@ -204,6 +205,9 @@ a {
   background-repeat: no-repeat;
   background-color: var(--filter-button);
   border-radius: 4px;
+}
+.features-icon {
+  padding-bottom: 30px;
 }
 .icon-features {
   padding: 25px 100px;
@@ -383,7 +387,7 @@ a {
   align-content: flex-start;
 }
 .footer-data {
-  padding-right: 70px;
+  margin-right: 70px;
 }
 .logo-footer {
   display: block;
@@ -414,7 +418,6 @@ a {
 .footer-text {
   margin-top: 0;
   margin-bottom: 20px;
-  padding-top: 8px;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -475,7 +478,6 @@ a {
 }
 .filter-button {
   border-style: none;
-  outline: none;
   height: 38px;
   cursor: pointer;
   background: var(--filter-button);
