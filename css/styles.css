@@ -35,7 +35,11 @@ a {
   display: block;
   text-decoration: none;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* header */
 .heading {
   border-bottom: 1px solid var(--nav-border-color);
@@ -142,13 +146,14 @@ a {
     url(../images/Hero.jpg);
   background-color: var(--background-hero);
 }
-.hero-name {
+.hero-heading {
   width: 696px;
   margin-top: 0;
   margin-right: auto;
   margin-bottom: 30px;
   margin-left: auto;
-
+}
+.hero-name {
   font-weight: 900;
   font-style: normal;
   font-size: 44px;
@@ -194,20 +199,21 @@ a {
 .features-list {
   width: 270px;
 }
-.features-list .icon-features {
-  content: "";
+.features-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
-  width: 270px;
-  background-position: center;
-  background-repeat: no-repeat;
+
   background-color: var(--filter-button);
   border-radius: 4px;
 }
 .features-icon {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 .icon-features {
-  padding: 25px 100px;
+  width: 70px;
+  height: 70px;
 }
 
 .features-list:not(:first-child) {
@@ -237,7 +243,7 @@ a {
   color: var(--primeri-text-color);
 }
 /* Чем мы занимаемся */
-.projects--sect {
+.projects-sect {
   padding-bottom: 94px;
 }
 .projects-title {
@@ -381,7 +387,6 @@ a {
 }
 .footer-cont {
   display: flex;
-  align-content: flex-start;
   align-items: baseline;
 }
 .footer-data {
