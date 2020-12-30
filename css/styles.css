@@ -64,7 +64,7 @@ img {
   margin-right: 93px;
 
   font-family: "Raleway", sans-serif;
-  font-style: 400;
+  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -315,7 +315,9 @@ img {
   display: flex;
   justify-content: center;
 }
-
+.social-icon:not(:last-child) {
+  margin-right: 10px;
+}
 .link-icon {
   display: flex;
   justify-content: center;
@@ -323,7 +325,7 @@ img {
   width: 44px;
   height: 44px;
   max-width: 100%;
-  margin-right: 10px;
+
   border-radius: 50%;
   cursor: pointer;
   fill: var(--color-links);
@@ -412,7 +414,6 @@ img {
 }
 .contacts {
   margin-right: auto;
-  margin-bottom: 9px;
   color: var(--contacts-color);
 }
 .mail {
