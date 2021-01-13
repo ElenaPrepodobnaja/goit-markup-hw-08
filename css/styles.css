@@ -636,8 +636,8 @@ img {
   margin-bottom: 0;
 }
 
-.project-li:hover,
-.project-li:focus {
+.project-link:hover,
+.project-link:focus {
   box-shadow: var(--project-shadow);
 }
 .project-text {
@@ -663,9 +663,10 @@ img {
   transform: translatey(100%);
   transition: transform var(--transit-time) var(--smooth-function);
 }
-.project-li:hover .overlay,
-.project-li:focus-within .overlay {
+.project-link:hover .overlay,
+.project-link:focus .overlay {
   transform: translatey(0);
+  box-shadow: var(--project-shadow);
 }
 .project-foto {
   display: block;
