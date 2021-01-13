@@ -340,6 +340,7 @@ img {
 }
 .designation {
   position: absolute;
+  left: 0;
   bottom: 0;
   width: 370px;
   height: 70px;
@@ -662,7 +663,8 @@ img {
   transform: translatey(100%);
   transition: transform var(--transit-time) var(--smooth-function);
 }
-.project-li:hover .overlay {
+.project-li:hover .overlay,
+.project-li:focus-within .overlay {
   transform: translatey(0);
 }
 .project-foto {
