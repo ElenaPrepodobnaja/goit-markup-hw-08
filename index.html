@@ -48,7 +48,26 @@
     <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur in provident reiciendis fuga recusandae voluptates facere vero eum ipsam delectus harum distinctio maxime, molestias quibusdam fugit numquam nisi. Ea, quisquam.</p>
+        <form>
+            <legend>Оставьте свои данные, мы вам перезвоним</legend>
+            <label>
+              Имя 
+              <input type="text" name="username" />
+            </label>
+            <label>
+              Телефон
+              <input type="tel" name="tel" />
+            </label>
+            <label>
+              Почта
+              <input type="email" name="email" />
+            </label>
+            <label>
+              Комментарий
+              <textarea name="feedback" rows="5" placeholder="Введите текст"></textarea>
+            </label>
+           <button type="submit">Отправить</button>
+          </form>
         <button class="button-modal" data-modal-close><svg class="close-modal">
           <use href="./images/symbol-defs.svg#icon-vector"></use>
         </svg></button>
@@ -282,8 +301,17 @@
         </ul>
       </div>
     </div>
-  </div>
-</footer>
+    <form class="footer-form js-speaker-form">
+      <label>
+        <p class="footer-text">Подпишитесь на рассылку</p>
+        <input class="footer-input" type="email" name="email" placeholder="E-mail" />
+      </label>
+      <button class="footer-button" type="submit">Подписаться<svg class="send">
+        <use href="./images/symbol-defs.svg#icon-send" width="24px" height="24px"</button>
+    </form>
+   </div>
+  </footer>
 <script src="./js/modal.js"></script>
+<script src="./js/js-speaker-form.js"></script>
 </body>
 </html>
