@@ -304,13 +304,12 @@ label {
   box-sizing: border-box;
   border-radius: 4px;
   cursor: pointer;
-  transition: outline-color var(--transit-time) var(--smooth-function),
-    border var(--transit-time) var(--smooth-function);
+  transition: border var(--transit-time) var(--smooth-function);
 }
 .form-input:hover,
 .form-input:focus {
-  outline-color: var(--accent-color);
-  border: solid var(--accent-color);
+  outline: none;
+  border: 1px solid var(--accent-color);
 }
 
 .form-input:hover + .icon,
@@ -332,7 +331,8 @@ label {
 }
 .feedback:hover,
 .feedback:focus {
-  border: solid var(--accent-color);
+  outline: none;
+  border: 1px solid var(--accent-color);
 }
 /* Особенности */
 .visually-hidden {
