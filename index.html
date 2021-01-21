@@ -54,27 +54,25 @@
         <div class="modal-form"><form>
           <legend class="modal-legend">Оставьте свои данные, мы вам перезвоним</legend>
           <label for="name">Имя</label><div class="modal-input"><input class="form-input" type="text" name="username" id="name"/><svg class="icon">
-            <use href="./images/symbol-defs.svg#icon-person" width="12px" height="12px"></use>
+            <use href="./images/symbol-defs.svg#icon-person" width="18px" height="18px"></use>
           </svg></div>
           
           <label for="name">Телефон</label><div class="modal-input">
             <input class="form-input" type="tel" name="tel" id="name"/><svg class="icon">
-              <use href="./images/symbol-defs.svg#icon-phone" width="13px" height="13px"></use>
+              <use href="./images/symbol-defs.svg#icon-phone" width="18px" height="18px"></use>
             </svg></div>
           
           <label for="name">Почта</label><div class="modal-input">   <input class="form-input" type="email" name="email" id="name"/><svg class="icon">
-            <use href="./images/symbol-defs.svg#icon-mail" width="15px" height="12px"></use>
+            <use href="./images/symbol-defs.svg#icon-email" width="18px" height="18px"></use>
           </svg></div>
           
           <label for="name">Комментарий</label> <div>
             <textarea name="feedback" rows="5" placeholder="Введите текст" id="name" class="feedback"></textarea></div>
-          
-         
-           <input type="checkbox" name="" id="policy">
-          <label for="policy"> Соглашаюсь с рассылкой и принимаю 
-           <a href="#">Условия договора</a>
+                 
+           <label for="policy" class="check-text"> <input type="checkbox" name="checkbox" id="policy" class="check visually-hidden"><span class="icon-checkbox"></span>Соглашаюсь с рассылкой и принимаю<a href="#" class="check-link">Условия договора</a>
           </label>
-          <button type="submit">Отправить</button>
+
+          <button type="submit" class="btn-sub">Отправить</button>
         </form></div>
         </div>
     </div>
@@ -306,14 +304,15 @@
         </ul>
       </div>
     </div>
-    <form class="footer-form js-speaker-form">
+    <div>
+      <p class="footer-text">Подпишитесь на рассылку</p>
+      <form class="footer-form js-speaker-form">
       <label>
-        <p class="footer-text">Подпишитесь на рассылку</p>
         <input class="footer-input" type="email" name="email" placeholder="E-mail" />
       </label>
       <button class="footer-button" type="submit">Подписаться<svg class="send">
         <use href="./images/symbol-defs.svg#icon-send" width="24px" height="24px"</button>
-    </form>
+    </form></div>
    </div>
   </footer>
 <script src="./js/modal.js"></script>
