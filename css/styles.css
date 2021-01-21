@@ -341,6 +341,7 @@ label {
   margin-right: 8px;
   border: 2px solid var(--title-text-color);
   border-radius: 4px;
+  cursor: pointer;
 }
 .icon-checkbox:hover,
 .icon-checkbox:focus {
@@ -382,10 +383,15 @@ label {
 
   color: var(--hero-color);
   border-style: none;
-  background: var(--btn-sub);
+  background: var(--accent-color);
   box-shadow: var(--shadow);
   border-radius: 4px;
   cursor: pointer;
+  transition: background var(--transit-time) var(--smooth-function);
+}
+.btn-sub:hover,
+.btn-sub:focus {
+  background: var(--btn-sub);
 }
 /* Особенности */
 
