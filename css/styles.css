@@ -354,11 +354,7 @@ label {
   color: var(--accent-color);
   text-decoration: underline;
 }
-.custom-checkbox + .check-text {
-  display: inline-flex;
-  align-items: center;
-  user-select: none;
-}
+
 .custom-checkbox + .check-text::before {
   content: "";
   display: inline-block;
@@ -383,17 +379,8 @@ label {
   border-color: var(--btn-sub);
 }
 
-.custom-checkbox:not(:disabled):active + .check-text::before {
-  background-color: #b3d7ff;
-  border-color: #b3d7ff;
-}
-
-.custom-checkbox:focus + .check-text::before {
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
-
 .custom-checkbox:focus:not(:checked) + .check-text::before {
-  border-color: #80bdff;
+  border-color: var(--btn-sub);
 }
 .btn-sub {
   width: 200px;
