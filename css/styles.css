@@ -365,7 +365,7 @@ label {
   margin-right: 0.5em;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100% 100%;
+  background-size: 16px 15px;
   transition: border-color var(--transit-time) var(--smooth-function);
 }
 .custom-checkbox:checked + .check-text::before {
