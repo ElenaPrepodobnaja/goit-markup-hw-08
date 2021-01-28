@@ -27,6 +27,33 @@
   --shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   --modal-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --font-body: "Roboto", sans-serif;
+  --font-logo: "Raleway", sans-serif;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+  --font-heavy: 900;
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-26: 26px;
+  --font-size-36: 36px;
+  --font-size-44: 44px;
+  --line-height(1.14): 1.14;
+  --line-height(1.15): 1.15;
+  --line-height(1.17): 1.17;
+  --line-height(1.19): 1.19;
+  --line-height(1.36): 1.36;
+  --line-height(1.62): 1.62;
+  --line-height(1.71): 1.71;
+  --line-height(1.87): 1.87;
+  --line-height(2): 2;
+  --letter-spacing(0.01): 0.01em;
+  --letter-spacing(0.02): 0.02em;
+  --letter-spacing(0.03): 0.03em;
+  --letter-spacing(0.06): 0.06em;
 }
 body {
   font-family: "Roboto", sans-serif;
