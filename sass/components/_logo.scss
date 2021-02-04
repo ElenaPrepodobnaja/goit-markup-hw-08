@@ -1,28 +1,13 @@
 .logo-nav {
-  display: flex;
-  align-items: center;
-  margin-right: 93px;
-
   font-family: $font-logo;
   font-style: normal;
   font-weight: $font-bold;
-  font-size: $font-size-26;
-  line-height: $line-height-19;
+  font-size: $font-size-24;
+  line-height: $line-height-17;
+  letter-spacing: $letter-spacing-03;
 
   color: $logo-color;
 }
-
 .logo-web {
   color: $accent-color;
-}
-.logo-footer {
-  display: block;
-  margin-bottom: 20px;
-  margin-right: auto;
-  font-family: $font-logo;
-  font-weight: $font-bold;
-  font-size: $font-size-26;
-  line-height: $line-height-19;
-
-  color: $hero-color;
 }

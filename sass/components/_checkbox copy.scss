@@ -1,0 +1,26 @@
+.custom-checkbox + .check-text::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid $title-text-color;
+  border-radius: 2px;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 16px 15px;
+  transition: border-color $transit-time $smooth-function;
+}
+.custom-checkbox:checked + .check-text::before {
+  border-color: $accent-color;
+  background-color: $accent-color;
+  background-image: url("../images/check.svg");
+}
+
+.custom-checkbox:not(:disabled):not(:checked) + .check-text:hover::before {
+  border-color: $btn-sub;
+}
+
+.custom-checkbox:focus:not(:checked) + .check-text::before {
+  border-color: $btn-sub;
+}
