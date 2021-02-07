@@ -1,36 +1,41 @@
 .hero-section {
-  // max-width: 1600px;
-  // height: 600px;
-  // text-align: center;
-  // padding-top: 200px;
-  // padding-bottom: 200px;
-  // margin-left: auto;
-  // margin-right: auto;
-
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: center;
+  max-width: 480px;
+  height: 400px;
+  padding: 118px 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-image: linear-gradient(
       to right,
       $background-color-hero,
       $background-color-hero
     ),
-    url(../images/Hero.jpg);
+    url(../images/hero_mobil-480.jpg);
   background-color: $background-hero;
 }
-.hero-heading {
-  width: 696px;
-  margin-top: 0;
-  margin-right: auto;
-  margin-bottom: 30px;
-  margin-left: auto;
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        to right,
+        $background-color-hero,
+        $background-color-hero
+      ),
+      url(../images/hero_mobil@2x-960.jpg);
+  }
 }
 .hero-name {
   margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+
   font-weight: $font-heavy;
   font-style: normal;
-  font-size: $font-size-44;
-  line-height: $line-height-36;
+  font-size: $font-size-26;
+  line-height: $line-height-62;
 
   letter-spacing: $letter-spacing-06;
   text-transform: uppercase;
@@ -38,6 +43,7 @@
   color: $hero-color;
 }
 .hero-button {
+  display: block;
   width: 200px;
   height: 50px;
   margin-left: auto;

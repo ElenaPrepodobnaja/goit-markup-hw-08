@@ -437,20 +437,6 @@ label {
   display: none;
 }
 
-.command {
-  padding: 60px 0;
-  background-color: #f5f4fa;
-}
-
-.command-title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  text-align: center;
-  font-size: 28px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-}
-
 .clients-icon use {
   display: -webkit-box;
   display: -ms-flexbox;
