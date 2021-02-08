@@ -12,7 +12,7 @@
       $background-color-hero,
       $background-color-hero
     ),
-    url(../images/hero_mobil-480.jpg);
+    url(../images/hero/hero_mobil-480.jpg);
   background-color: $background-hero;
 }
 @media screen and (min-device-pixel-ratio: 2),
@@ -24,7 +24,7 @@
         $background-color-hero,
         $background-color-hero
       ),
-      url(../images/hero_mobil@2x-960.jpg);
+      url(../images/hero/hero_mobil@2x-960.jpg);
   }
 }
 .hero-name {

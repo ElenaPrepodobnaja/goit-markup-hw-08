@@ -22,22 +22,29 @@ img {
   max-width: 100%;
   height: auto;
 }
-.container {
-  width: 480px;
-  margin: 0 auto;
-  padding: 0 15px;
 
-  @media screen and (min-width: $tablet-width) {
+@media screen and (min-width: $mobile-width) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: $tablet-width) {
+  .container {
     width: 768px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
   }
+}
 
-  @media screen and (min-width: $desktop-width) {
+@media screen and (min-width: $desktop-width) {
+  .container {
     width: 1200px;
   }
 }
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
