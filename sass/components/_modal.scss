@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
   z-index: 1;
+  padding: 93px 15px;
   height: 100%;
   width: 100%;
   background-color: $backdrop-color;
@@ -10,20 +11,23 @@
     opacity: 0;
     pointer-events: none;
   }
+  overflow-y: scroll;
 }
 
 .modal {
   position: absolute;
-  top: 45%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-
   padding: 40px;
   width: 450px;
   height: 609px;
   border-radius: 4px;
   background-color: $hero-color;
   box-shadow: $modal-shadow;
+
+  @media screen and(min-widht:$tablet-min-width) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 .button-modal {
   position: absolute;

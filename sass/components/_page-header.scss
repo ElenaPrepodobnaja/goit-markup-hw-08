@@ -1,4 +1,5 @@
 .heading {
+  position: relative;
   border-bottom: 1px solid $nav-border-color;
 }
 .navigation {
@@ -6,25 +7,5 @@
   align-items: center;
   justify-content: space-between;
   margin: 0;
-}
-.hamburger-button {
-  height: 40px;
-  border: none;
-  background-color: $hero-color;
-  cursor: pointer;
-
-  transition: color $transit-time $smooth-function;
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
-}
-.close-hamburger {
-  width: 24px;
-  height: 16px;
-}
-.contacts-nav,
-.site-nav {
-  display: none;
+  padding: 16px 0;
 }

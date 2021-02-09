@@ -1,18 +1,20 @@
 .hero-section {
-  max-width: 480px;
-  height: 400px;
+  width: 480px;
   padding: 118px 60px;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(
-      to right,
-      $background-color-hero,
-      $background-color-hero
-    ),
-    url(../images/hero/hero_mobil-480.jpg);
+  @media screen and (min-width: $mobile-min-width) and(max-width:$mobile-max-width) {
+    width: 480px;
+    background-image: linear-gradient(
+        to right,
+        $background-color-hero,
+        $background-color-hero
+      ),
+      url(../images/hero/hero_mobil-480.jpg);
+  }
   background-color: $background-hero;
 }
 @media screen and (min-device-pixel-ratio: 2),

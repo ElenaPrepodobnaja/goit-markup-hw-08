@@ -26,6 +26,8 @@ $btn-sub: #188ce8;
 $shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 $modal-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
+$menu-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+  0px 1px 3px rgba(0, 0, 0, 0.16);
 $font-body: "Roboto", sans-serif;
 $font-logo: "Raleway", sans-serif;
 $font-normal: 400;
@@ -58,6 +60,8 @@ $letter-spacing-01: 0.01em;
 $letter-spacing-02: 0.02em;
 $letter-spacing-03: 0.03em;
 $letter-spacing-06: 0.06em;
-$mobile-width: 480px;
-$tablet-width: 768px;
+$mobile-min-width: 480px;
+$mobile-max-width: 767px;
+$tablet-min-width: 768px;
+$tablet-max-width: 1199px;
 $desktop-width: 1200px;
