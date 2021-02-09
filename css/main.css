@@ -788,14 +788,33 @@ label {
   fill: #ffffff;
 }
 
+.hamburger {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
 .menu-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  -webkit-transform: translate(-50px -50px);
+          transform: translate(-50px -50px);
+  z-index: 1;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
+  width: 40px;
+  height: 40px;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -804,21 +823,16 @@ label {
   fill: #2196f3;
 }
 
-.menu-button .icon-vector {
+.menu-button .icon-close {
   display: none;
 }
 
-.menu-button .is-open.icon-vector {
+.menu-button.is-open .icon-hamburger {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
   display: block;
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  width: 20px;
-  height: 20px;
-}
-
-.menu-button .is-open.icon-hamburger {
-  display: none;
 }
 
 .menu-list {
@@ -828,7 +842,7 @@ label {
   left: 0;
   width: 100%;
   height: 796px;
-  padding: 48px 0;
+  padding: 48px 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -836,5 +850,54 @@ label {
 
 .menu-list.is-open {
   display: block;
+}
+
+.nav {
+  font-size: 40px;
+  line-height: 1.18;
+  margin-bottom: 302px;
+}
+
+.site-nav a {
+  padding-bottom: 32px;
+  color: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav a:hover, .site-nav a:focus {
+  color: #2196f3;
+}
+
+.site-nav .link.current {
+  color: #2196f3;
+}
+
+.contact {
+  margin-bottom: 64px;
+}
+
+.contact .nav-icon {
+  display: none;
+}
+
+.tel {
+  margin-bottom: 32px;
+  font-size: 34px;
+  line-height: 1.18;
+  color: #2196f3;
+}
+
+.mail {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.17;
+  color: #757575;
+}
+
+.soc-link {
+  font-size: 18px;
+  line-height: 1.22;
+  color: #2196f3;
 }
 /*# sourceMappingURL=main.css.map */

@@ -27,25 +27,25 @@
           >
           <div class="hamburger">
             <button
-              class="menu-button is-open"
+              class="menu-button"
               type="button"
               aria-expanded="false"
               aria-controls="menu-list"
               data-menu-button
             >
-              <svg width="40px" height="40px" aria-label="переключатель меню">
+              <svg width="20" height="20" aria-label="переключатель меню">
+                <use
+                  class="icon-close"
+                  href="./images/symbol-defs.svg#icon-close"
+                ></use>
                 <use
                   class="icon-hamburger"
                   href="./images/symbol-defs.svg#icon-hamburger"
                 ></use>
-                <use
-                  class="icon-vector"
-                  href="./images/symbol-defs.svg#icon-vector"
-                ></use>
               </svg>
             </button>
           </div>
-          <div class="menu-list is-open" id="menu-list" data-menu>
+          <div class="menu-list" id="menu-list" data-menu>
             <div class="nav">
               <ul class="site-nav">
                 <li class="item current">
@@ -59,19 +59,10 @@
                 </li>
               </ul>
             </div>
-            <div class="contacts">
+            <div class="contact">
               <ul class="contacts-nav">
                 <li class="item">
-                  <a class="auth-nav" href="mailto:info@devstudio.com"
-                    ><svg class="nav-icon envelope">
-                      <use
-                        href="./images/symbol-defs.svg#icon-envelope"
-                      ></use></svg
-                    >info@devstudio.com</a
-                  >
-                </li>
-                <li class="item">
-                  <a class="auth-nav" href="tel:+380961111111"
+                  <a class="auth-nav tel" href="tel:+380961111111"
                     ><svg class="nav-icon smartphone">
                       <use
                         href="./images/symbol-defs.svg#icon-smartphone"
@@ -79,6 +70,23 @@
                     >+380961111111</a
                   >
                 </li>
+                <li class="item">
+                  <a class="auth-nav mail" href="mailto:info@devstudio.com"
+                    ><svg class="nav-icon envelope">
+                      <use
+                        href="./images/symbol-defs.svg#icon-envelope"
+                      ></use></svg
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="social">
+              <ul class="soc-list">
+                <li><a href="#" class="soc-link">Instagram</a></li>
+                <li><a href="#" class="soc-link">Twitter</a></li>
+                <li><a href="#" class="soc-link">Facebook</a></li>
+                <li><a href="#" class="soc-link">LinkedIn</a></li>
               </ul>
             </div>
           </div>
