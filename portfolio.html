@@ -25,42 +25,78 @@
           <a class="logo-nav" href="/index.html"
             ><span class="logo-web">Web</span>Studio</a
           >
-          <div class="kebab">
-            <button class="kebab-button" data-modal-close>
-              <svg class="close-kebab">
-                <use href="./images/symbol-defs.svg#icon-kebab24px"></use>
+          <div class="hamburger">
+            <button
+              class="menu-button"
+              type="button"
+              aria-expanded="false"
+              aria-controls="menu-list"
+              data-menu-button
+            >
+              <svg width="20" height="20" aria-label="переключатель меню">
+                <use
+                  class="icon-close"
+                  href="./images/symbol-defs.svg#icon-close"
+                ></use>
+                <use
+                  class="icon-hamburger"
+                  href="./images/symbol-defs.svg#icon-hamburger"
+                ></use>
               </svg>
             </button>
           </div>
-          <ul class="site-nav">
-            <li class="item"><a href="./index.html" class="link">Студия</a></li>
-            <li class="item">
-              <a href="./portfolio.html" class="link current">Портфолио</a>
-            </li>
-            <li class="item"><a href="Контакты" class="link">Контакты</a></li>
-          </ul>
+          <div class="menu-list" id="menu-list" data-menu>
+            <div class="nav">
+              <ul class="site-nav">
+                <li class="item current">
+                  <a href="./index.html" class="link current">Студия</a>
+                </li>
+                <li class="item">
+                  <a href="./portfolio.html" class="link">Портфолио</a>
+                </li>
+                <li class="item">
+                  <a href="Контакты" class="link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="contact">
+              <ul class="contacts-nav">
+                <li class="item m">
+                  <a class="auth-nav mail" href="mailto:info@devstudio.com"
+                    ><svg class="nav-icon envelope">
+                      <use
+                        href="./images/symbol-defs.svg#icon-envelope"
+                      ></use></svg
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="item t">
+                  <a class="auth-nav tel" href="tel:+380961111111"
+                    ><svg class="nav-icon smartphone">
+                      <use
+                        href="./images/symbol-defs.svg#icon-smartphone"
+                      ></use></svg
+                    >+380961111111</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="social">
+              <ul class="soc-list">
+                <li class="soc-li">
+                  <a href="#" class="soc-link">Instagram</a>
+                </li>
+                <li class="soc-li"><a href="#" class="soc-link">Twitter</a></li>
+                <li class="soc-li">
+                  <a href="#" class="soc-link">Facebook</a>
+                </li>
+                <li class="soc-li">
+                  <a href="#" class="soc-link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-
-        <ul class="contacts-nav">
-          <li class="item">
-            <a class="auth-nav" href="mailto:info@devstudio.com"
-              ><svg class="nav-icon envelope">
-                <use
-                  href="./images/symbol-defs.svg#icon-envelope"
-                  width="16px"
-                  height="12px"
-                ></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="item">
-            <a class="auth-nav" href="tel:+380961111111"
-              ><svg class="nav-icon smartphone">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg
-              >+380961111111</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
     <main>
@@ -89,11 +125,34 @@
             <li class="project-li">
               <a href="#" class="project-link"
                 ><div class="foto-overlay">
-                  <img
-                    class="project-foto"
-                    src="./images/технокряк.jpg"
-                    alt="Веб-сайт"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/texno_desktop-370-min.jpg    1x,
+                        ./images/portfolio/texno_desktop@2x-740-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/texno-354-min.jpg    1x,
+                        ./images/portfolio/texno@2x-708-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/texno-450-min.jpg    1x,
+                        ./images/portfolio/texno@2x-900-min.jpg 2x
+                      "
+                      media="(max-width: 480px)"
+                    />
+                    <img
+                      class="project-foto"
+                      src="./images/portfolio/texno_desktop-370-min.jpg"
+                      alt="Веб-сайт"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="project-text">
                       Технокряк это современная площадка распространения
@@ -112,11 +171,34 @@
             <li class="project-li">
               <a href="#" class="project-link"
                 ><div class="foto-overlay">
-                  <img
-                    class="project-foto"
-                    src="./images/постер.jpg"
-                    alt="два баскетболиста"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/poster_desktop-370-min.jpg    1x,
+                        ./images/portfolio/poster_desktop@2x-740-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/poster-354-min.jpg    1x,
+                        ./images/portfolio/poster@2x-708-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/poster-450-min.jpg    1x,
+                        ./images/portfolio/poster@2x-900-min.jpg 2x
+                      "
+                      media="(max-width: 480px)"
+                    />
+                    <img
+                      class="project-foto"
+                      src="./images/portfolio/poster_desktop-370-min.jpg"
+                      alt="два баскетболиста"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="project-text">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -137,11 +219,34 @@
             <li class="project-li">
               <a href="#" class="project-link"
                 ><div class="foto-overlay">
-                  <img
-                    class="project-foto"
-                    src="./images/ресторан.jpg"
-                    alt="логотип ресторана"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood_desktop-370-min.jpg    1x,
+                        ./images/portfolio/seafood_desktop@2x-740-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/sea-354-min.jpg    1x,
+                        ./images/portfolio/sea@2x-708-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/sea-450-min.jpg    1x,
+                        ./images/portfolio/sea@2x-900-min.jpg 2x
+                      "
+                      media="(max-width: 480px)"
+                    />
+                    <img
+                      class="project-foto"
+                      src="./images/portfolio/seafood_desktop-370-min.jpg"
+                      alt="логотип ресторана"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="project-text">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -161,11 +266,34 @@
             <li class="project-li">
               <a href="#" class="project-link"
                 ><div class="foto-overlay">
-                  <img
-                    class="project-foto"
-                    src="./images/проект-prime.jpg"
-                    alt="наушники"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/prime_desktop-370-min.jpg    1x,
+                        ./images/portfolio/prime_desktop@2x-740-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-354-min.jpg    1x,
+                        ./images/portfolio/prime@2x-708-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-450-min.jpg    1x,
+                        ./images/portfolio/prime@2x-900-min.jpg 2x
+                      "
+                      media="(max-width: 480px)"
+                    />
+                    <img
+                      class="project-foto"
+                      src="./images/portfolio/prime_desktop-370-min.jpg"
+                      alt="наушники"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="project-text">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -185,11 +313,32 @@
             <li class="project-li">
               <a href="#" class="project-link"
                 ><div class="foto-overlay">
-                  <img
-                    class="project-foto"
-                    src="./images/проект-boxes.jpg"
-                    alt="две коробки белая и бежевая"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes_desktop-370.jpg 1x,
+                        ./images/portfolio/boxes@2x-740.jpg      2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-354-min.jpg    1x,
+                        ./images/portfolio/boxes@2x-708-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-450-min.jpg    1x,
+                        ./images/portfolio/boxes@2x-900-min.jpg 2x
+                      "
+                      media="(max-width: 480px)"
+                    />
+                    <img class="project-foto"
+                    src="./images/portfolio/boxes_desktop-370.jpg" alt="две
+                    коробки белая и бежевая" " />
+                  </picture>
                   <div class="overlay">
                     <p class="project-text">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -209,11 +358,34 @@
             <li class="project-li">
               <a href="#" class="project-link"
                 ><div class="foto-overlay">
-                  <img
-                    class="project-foto"
-                    src="./images/inspiration-has-no-borders.jpg"
-                    alt="монитор компьютера"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/borders-370.jpg    1x,
+                        ./images/portfolio/borders@2x-740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/borders-354-min.jpg    1x,
+                        ./images/portfolio/borders@2x-708-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/borders-450-min.jpg    1x,
+                        ./images/portfolio/borders@2x-900-min.jpg 2x
+                      "
+                      media="(max-width: 480px)"
+                    />
+                    <img
+                      class="project-foto"
+                      src="./images/portfolio/borders-370.jpg"
+                      alt="монитор компьютера"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="project-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -232,11 +404,34 @@
             <li class="project-li">
               <a href="#" class="project-link"
                 ><div class="foto-overlay">
-                  <img
-                    class="project-foto"
-                    src="./images/издание-limited-edition.jpg"
-                    alt="разворот книги"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/limited-370.jpg    1x,
+                        ./images/portfolio/limited@2x-740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/limited-354-min.jpg    1x,
+                        ./images/portfolio/limited@2x-708-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/limited-450-min.jpg    1x,
+                        ./images/portfolio/limited@2x-900-min.jpg 2x
+                      "
+                      media="(max-width: 480px)"
+                    />
+                    <img
+                      class="project-foto"
+                      src="./images/portfolio/limited-370.jpg"
+                      alt="разворот книги"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="project-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -256,11 +451,34 @@
             <li class="project-li">
               <a href="#" class="project-link"
                 ><div class="foto-overlay">
-                  <img
-                    class="project-foto"
-                    src="./images/проект-lab.jpg"
-                    alt="бирка с буквами"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/lab-370.jpg    1x,
+                        ./images/portfolio/lab@2x-740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/lab-354-min.jpg    1x,
+                        ./images/portfolio/lab@2x-708-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/lab-450-min.jpg    1x,
+                        ./images/portfolio/lab@2x-900-min.jpg 2x
+                      "
+                      media="(max-width: 480px)"
+                    />
+                    <img
+                      class="project-foto"
+                      src="./images/portfolio/lab-370.jpg"
+                      alt="бирка с буквами"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="project-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -279,11 +497,34 @@
             <li class="project-li">
               <a href="#" class="project-link"
                 ><div class="foto-overlay">
-                  <img
-                    class="project-foto"
-                    src="./images/growing-business.jpg"
-                    alt="ноутбук"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/business-370.jpg    1x,
+                        ./images/portfolio/business@2x-740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/business-354-min.jpg    1x,
+                        ./images/portfolio/business@2x-708-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/business-450-min.jpg    1x,
+                        ./images/portfolio/business@2x-900-min.jpg 2x
+                      "
+                      media="(max-width: 480px)"
+                    />
+                    <img
+                      class="project-foto"
+                      src="./images/portfolio/business-370.jpg"
+                      alt="ноутбук"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="project-text">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -314,13 +555,15 @@
             >
             <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
             <ul>
-              <li class="mail">
+              <li class="foot-mail">
                 <a class="contacts" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="tel">
-                <a class="contacts" href="tel:+380961111111">+380961111111</a>
+              <li class="foot-tel">
+                <a class="contacts" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </div>

@@ -1,0 +1,53 @@
+.filter-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  //    padding-top: 94px;
+  //   padding-bottom: 94px;
+}
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  //   align-items: center;
+  //   justify-content: center;
+  padding-left: 0;
+  margin-left: 15px;
+  margin-right: auto;
+  margin-bottom: 40px;
+
+  &-list:not(:last-child) {
+    margin-right: 8px;
+  }
+  &-list:nth-last-child(n + 2) {
+    margin-bottom: 15px;
+  }
+}
+.filter-button {
+  border-style: none;
+  height: 38px;
+  cursor: pointer;
+  background: $filter-button;
+  border-radius: 4px;
+
+  padding: 6px 22px;
+  font-weight: $font-medium;
+  font-size: $font-size-16;
+  line-height: $line-height-62;
+
+  letter-spacing: $letter-spacing-03;
+
+  transition: color $transit-time $smooth-function,
+    background-color $transit-time $smooth-function,
+    box-shadow $transit-time $smooth-function;
+
+  &:hover,
+  &:focus {
+    color: $hero-color;
+    background-color: $accent-color;
+    box-shadow: $btn-shadow;
+  }
+  &.current {
+    background-color: $accent-color;
+    color: $hero-color;
+    box-shadow: $btn-shadow;
+  }
+}

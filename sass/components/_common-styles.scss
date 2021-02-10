@@ -26,14 +26,14 @@ img {
   height: auto;
 }
 
-@media screen and (min-width: $mobile-min-width) and(max-width:$mobile-max-width) {
+@media screen and( min-width:$mobile-min-width) and(max-width:$mobile-max-width) {
   .container {
     width: 480px;
     margin: 0 auto;
     padding: 0 15px;
   }
 }
-@media screen and (min-width: $tablet-min-width) and(max-width:$tablet-max-width) {
+@media screen and(min-width:$tablet-min-width) and(max-width:$tablet-max-width) {
   .container {
     width: 768px;
     display: flex;

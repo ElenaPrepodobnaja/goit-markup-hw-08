@@ -1,6 +1,7 @@
 .footer {
   padding: 60px 0;
   background: $footer-color;
+  letter-spacing: $letter-spacing-03;
   @media screen and (max-width: 767px) {
     text-align: center;
   }
@@ -31,17 +32,16 @@
     color: $accent-color;
   }
 }
-.mail {
+.foot-mail {
   margin-bottom: 8px;
 }
-.tel {
+.foot-tel {
   margin-bottom: 60px;
 }
 .footer-text {
   margin-top: 0;
   margin-bottom: 20px;
   font-weight: $font-bold;
-  letter-spacing: $letter-spacing-03;
   text-transform: uppercase;
 
   color: $hero-color;
