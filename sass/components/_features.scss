@@ -1,12 +1,28 @@
 .features {
   padding: 60px 0;
   &-item {
-    // display: flex;
     padding: 0;
   }
 }
 .features-list {
   width: 450px;
+  @media screen and (min-width: $tablet-width) {
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+    height: auto;
+    width: calc((100% - 4 * 15px) / 2);
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .features-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
 }
 .features-icon {
   display: flex;

@@ -5,6 +5,22 @@
   @media screen and (max-width: 767px) {
     text-align: center;
   }
+  @media screen and (min-width: $tablet-width) {
+    padding: 60px 76px;
+  }
+}
+.footer-cont {
+  display: flex;
+  align-items: baseline;
+}
+@media screen and (min-width: $tablet-width) {
+  .footer-data {
+    margin-right: 165px;
+    text-align: center;
+  }
+  .footer-lin {
+    text-align: center;
+  }
 }
 .logo-footer {
   display: block;
@@ -65,7 +81,9 @@
     margin-right: 0;
   }
 }
-
+.foot-col {
+  display: flex;
+}
 .footer-form {
   & > label {
     margin-bottom: 20px;

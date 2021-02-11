@@ -7,25 +7,23 @@
   align-items: center;
   justify-content: space-between;
   margin: 0;
-  padding: 16px 0;
+  @media screen and (max-width: $tablet-width) {
+    padding: 16px 0;
+  }
 }
-.heder-nav,
-.heder-contact {
-  // display: flex;
+.nav-heder {
+  display: flex;
   margin: 0;
-  @media screen and (max-width: $mobile-max-width) {
+  @media screen and (max-width: $tablet-width) {
     display: none;
   }
 }
 .heder-site-nav {
   display: flex;
-}
-.heder-site-nav .item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 84px;
 }
 
 .heder-site-nav a {
-  // display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: $font-medium;
@@ -38,10 +36,11 @@
   }
 }
 
-.heder-site-nav .link.current {
+.link.current,
+.heder-link.current {
   color: $accent-color;
 }
-.link {
+.heder-link {
   position: relative;
 
   &.current::after {
@@ -60,13 +59,11 @@
   }
 }
 
-.heder-contacts-nav {
-  margin-left: auto;
-  // .item + .item {
-  //   margin-left: 50px;
-  // }
+.heder-item:not(:last-child) {
+  margin-right: 50px;
 }
-.heder-nav-icon {
+
+.nav-icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -78,21 +75,25 @@
   width: 10px;
   height: 16px;
 }
-
+.heder-contact {
+  display: flex;
+  align-items: center;
+}
 .heder-auth-nav {
   display: flex;
   align-items: center;
-  // padding-top: 32px;
-  // padding-bottom: 32px;
   font-weight: $font-medium;
   color: $primeri-text-color;
 
   transition: color $transit-time $smooth-function;
-  &:not(:last-child) {
-    margin-bottom: 10px;
-  }
+
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+}
+.contact-item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
   }
 }

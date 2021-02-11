@@ -14,7 +14,7 @@
   background-color: $background-hero;
 }
 
-@media screen and(max-width:$mobile-max-width) {
+@media screen and(max-width:$mobile-width) {
   .hero-section {
     max-width: 480px;
     padding: 118px 60px;
@@ -39,7 +39,7 @@
     }
   }
 }
-@media screen and (min-width: $tablet-min-width) and(max-width:$tablet-max-width) {
+@media screen and (min-width: $tablet-width) {
   .hero-section {
     max-width: 768px;
     padding: 118px 204px;

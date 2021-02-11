@@ -1,43 +1,44 @@
 .hamburger {
   font-weight: $font-medium;
   letter-spacing: $letter-spacing-02;
-}
-.menu-button {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  // transform: translate(-50px -50px);
-  z-index: 1;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  width: 40px;
-  height: 40px;
-  transition: fill $transit-time $smooth-function;
-
-  &:hover,
-  &:focus {
-    fill: $accent-color;
-  }
-  & .icon-close {
+  @media screen and(min-width:$tablet-width) {
     display: none;
   }
+}
+@media screen and (max-width: 767px) {
+  .menu-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    transform: translate(-50px -50px);
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-  &.is-open {
-    & .icon-hamburger {
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    transition: fill $transit-time $smooth-function;
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+    & .icon-close {
       display: none;
     }
 
-    & .icon-close {
-      display: block;
+    &.is-open {
+      & .icon-hamburger {
+        display: none;
+      }
+
+      & .icon-close {
+        display: block;
+      }
     }
-  }
-  @media screen and (min-width: $tablet-min-width) {
-    display: none;
   }
 }
 
@@ -90,7 +91,7 @@
 }
 .contacts-nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   .m {
     order: 2;
   }

@@ -11,3 +11,8 @@
 .logo-web {
   color: $accent-color;
 }
+@media screen and(min-width:$tablet-width) {
+  .heading .logo-nav {
+    margin-right: 88px;
+  }
+}
