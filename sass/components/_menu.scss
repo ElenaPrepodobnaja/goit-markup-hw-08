@@ -6,7 +6,7 @@
   position: absolute;
   top: 10px;
   right: 15px;
-  transform: translate(-50px -50px);
+  // transform: translate(-50px -50px);
   z-index: 1;
   display: inline-flex;
   align-items: center;
@@ -35,6 +35,9 @@
     & .icon-close {
       display: block;
     }
+  }
+  @media screen and (min-width: $tablet-min-width) {
+    display: none;
   }
 }
 
