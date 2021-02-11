@@ -1,3 +1,3 @@
-# goit-markup-hw-07
-Elena Prepodobnaja Homework №7
-https://elenaprepodobnaja.github.io/goit-markup-hw-07/
+# goit-markup-hw-08
+Elena Prepodobnaja Homework №8
+https://elenaprepodobnaja.github.io/goit-markup-hw-08/
