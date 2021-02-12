@@ -160,7 +160,7 @@ img {
   height: 16px;
 }
 
-.heder-contact {
+.heder-contact-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,8 +186,30 @@ img {
   color: #2196f3;
 }
 
-.contact-item:not(:last-child) {
-  margin-bottom: 10px;
+@media screen and (max-width: 1000px) {
+  .contact-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .heder-contact-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-item {
+    white-space: pre-wrap;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .contact-item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .logo-nav {

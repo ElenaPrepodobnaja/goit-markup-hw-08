@@ -75,7 +75,8 @@
   width: 10px;
   height: 16px;
 }
-.heder-contact {
+
+.heder-contact-nav {
   display: flex;
   align-items: center;
 }
@@ -92,8 +93,23 @@
     color: $accent-color;
   }
 }
-.contact-item {
-  &:not(:last-child) {
-    margin-bottom: 10px;
+@media screen and(max-width:1000px) {
+  .contact-item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+@media screen and(min-width:1000px) {
+  .heder-contact-nav {
+    display: flex;
+    align-items: center;
+  }
+  .contact-item {
+    white-space: pre-wrap;
+    align-self: center;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
   }
 }
