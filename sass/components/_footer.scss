@@ -9,9 +9,11 @@
     padding: 60px 76px;
   }
 }
-.footer-cont {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: $tablet-width) {
+  .footer-cont {
+    display: flex;
+    align-items: baseline;
+  }
 }
 @media screen and (min-width: $tablet-width) {
   .footer-data {
@@ -81,8 +83,10 @@
     margin-right: 0;
   }
 }
-.foot-col {
-  display: flex;
+@media screen and (min-width: $tablet-width) {
+  .foot-col {
+    display: flex;
+  }
 }
 .footer-form {
   & > label {

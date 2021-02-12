@@ -14,7 +14,8 @@
 .clients-item {
   display: flex;
   flex-wrap: wrap;
-  @media screen and (max-width: 1090px) {
+
+  @media screen and (min-width: 1090px) {
     justify-content: center;
   }
 }
@@ -30,7 +31,7 @@
       margin-bottom: 30px;
     }
   }
-  @media screen and (max-width: 1090px) {
+  @media screen and (min-width: 1090px) {
     &:not(:nth-child(3n)) {
       margin-right: 30px;
     }
