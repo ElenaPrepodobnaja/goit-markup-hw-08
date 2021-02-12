@@ -12,7 +12,7 @@
   letter-spacing: $letter-spacing-03;
 }
 .command-list {
-  @media screen and (max-width: $tablet-width) {
+  @media screen and (max-width: 767px) {
     width: 450px;
   }
   @media screen and (min-width: $tablet-width) {
@@ -21,7 +21,7 @@
     margin: -30px -15px;
   }
 }
-@media screen and (min-width: $tablet-width) {
+@media screen and (min-width: 767px) {
   .command-item {
     display: inline-block;
     margin: 30px 15px;

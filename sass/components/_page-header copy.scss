@@ -47,11 +47,12 @@
   }
 }
 
-.contacts-nav {
+.heder-contacts-nav {
+  display: flex;
   margin-left: auto;
-  // .item + .item {
-  //   margin-left: 50px;
-  // }
+  &.item + .item {
+    margin-left: 50px;
+  }
 }
 .nav-icon {
   margin-right: 10px;

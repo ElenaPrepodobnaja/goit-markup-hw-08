@@ -41,7 +41,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   .container {
     width: 1200px;
     display: -webkit-box;
@@ -81,7 +81,7 @@ img {
   margin: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .navigation {
     padding: 16px 0;
   }
@@ -94,7 +94,7 @@ img {
   margin: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav-heder {
     display: none;
   }
@@ -104,7 +104,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 84px;
+  margin-right: 54px;
 }
 
 .heder-site-nav a {
@@ -265,6 +265,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
+  height: 796px;
   padding: 48px 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -273,6 +274,12 @@ img {
 
 .menu-list.is-open {
   display: block;
+}
+
+@media screen and (min-width: 767px) {
+  .menu-list {
+    display: none;
+  }
 }
 
 .nav {
@@ -374,10 +381,9 @@ img {
 
 .backdrop {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   z-index: 1;
-  padding: 93px 15px;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
@@ -400,8 +406,17 @@ img {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (min-widht: 768px) {
+@media screen and (max-width: 480px) {
   .modal {
+    top: 93px;
+    left: 15px;
+  }
+}
+
+@media screen and (min-widht: 766px) {
+  .modal .modal {
+    top: 208px;
+    left: 159px;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -734,7 +749,7 @@ label {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .command-list {
     width: 450px;
   }
@@ -751,7 +766,7 @@ label {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .command-item {
     display: inline-block;
     margin: 30px 15px;
@@ -892,7 +907,7 @@ label {
       flex-wrap: wrap;
 }
 
-@media screen and (min-width: 1090px) {
+@media screen and (min-width: 768px) {
   .clients-item {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -918,7 +933,11 @@ label {
   }
 }
 
-@media screen and (min-width: 1090px) {
+@media screen and (min-width: 768px) {
+  .clients {
+    width: 226px;
+    height: 90px;
+  }
   .clients:not(:nth-child(3n)) {
     margin-right: 30px;
   }
@@ -964,12 +983,6 @@ label {
 }
 
 @media screen and (min-width: 768px) {
-  .footer {
-    padding: 60px 76px;
-  }
-}
-
-@media screen and (min-width: 768px) {
   .footer-cont {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -983,6 +996,7 @@ label {
 @media screen and (min-width: 768px) {
   .footer-data {
     margin-right: 165px;
+    margin-left: 76px;
     text-align: center;
   }
   .footer-lin {
@@ -1067,6 +1081,11 @@ label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align-last: center;
   }
 }
 
@@ -1204,8 +1223,22 @@ label {
   margin-right: 8px;
 }
 
-.filter-list:nth-last-child(n + 2) {
-  margin-bottom: 15px;
+@media screen and (max-width: 766px) {
+  .filter-list:nth-last-child(n + 2) {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
 }
 
 .filter-button {
@@ -1250,12 +1283,27 @@ label {
 
 .project-li {
   position: relative;
-  margin-bottom: 30px;
   border: 1px solid #eeeeee;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 1000px) {
+  .project-li:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project-li {
+    text-align: center;
+    width: calc((100% - 4 * 15px) / 2);
+  }
+  .project-li:nth-last-child(odd) {
+    margin-right: 30px;
+  }
 }
 
 .project-link:hover,

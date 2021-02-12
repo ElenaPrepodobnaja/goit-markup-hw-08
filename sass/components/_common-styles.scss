@@ -28,14 +28,13 @@ img {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-
   width: 480px;
 
   @media screen and(min-width:$tablet-width) {
     width: 768px;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @media screen and (min-width: 1000px) {
     width: 1200px;
     display: flex;
     flex-wrap: wrap;
