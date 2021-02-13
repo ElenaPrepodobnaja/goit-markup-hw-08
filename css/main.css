@@ -32,18 +32,18 @@ img {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  width: 480px;
+  width: 450px;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 738px;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .container {
-    width: 1200px;
+    width: 1170px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -100,7 +100,7 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 766px) {
   .menu-button {
     position: absolute;
     top: 10px;
@@ -143,6 +143,8 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+  -webkit-transform: translate(-50px -50px);
+          transform: translate(-50px -50px);
   width: 100%;
   height: 796px;
   padding: 48px 40px;
@@ -1582,9 +1584,12 @@ label {
   color: #2196f3;
 }
 
-@media screen and (max-width: 1000px) {
-  .contact-item:not(:last-child) {
-    margin-bottom: 10px;
+@media screen and (min-width: 500px) {
+  .heder-auth-nav {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
   }
 }
 
