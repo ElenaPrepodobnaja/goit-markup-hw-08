@@ -5,6 +5,8 @@
 .projects-title {
   margin-top: 0;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .clients-icon use {
   display: flex;
@@ -39,7 +41,14 @@
       margin-bottom: 30px;
     }
     width: 226px;
-    height: 90px;
+  }
+  @media screen and(min-width:1000px) {
+    width: 170px;
+
+    margin-bottom: 0;
+  }
+  &:not(:last-child) {
+    margin-right: 30px;
   }
 }
 .clients-link {

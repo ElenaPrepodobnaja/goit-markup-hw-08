@@ -14,14 +14,24 @@
     height: auto;
     width: calc((100% - 4 * 15px) / 2);
   }
-}
-
-@media screen and (min-width: $tablet-width) {
   .features-item {
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .features-item {
+    margin: 0;
+  }
+  .features-list {
+    width: 270px;
+    margin: 0;
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
   }
 }
 .features-icon {

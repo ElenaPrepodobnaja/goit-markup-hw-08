@@ -1,3 +1,56 @@
-.projects-sect {
-  display: none;
+@media screen and(max-width:$tablet-width) {
+  .projects-sect {
+    display: none;
+  }
+}
+@media screen and(min-width:1000px) {
+  .projects-sect {
+    padding-bottom: 94px;
+  }
+  .projects-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  .projects-item {
+    display: flex;
+    padding: 0;
+  }
+  .project-list {
+    position: relative;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  .designation {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    padding: 27px 0;
+    background: rgba(47, 48, 58, 0.8);
+  }
+  .designation-name {
+    margin: 0;
+    font-weight: $font-bold;
+    font-size: $font-size-14;
+    line-height: $line-height-14;
+    text-align: center;
+    letter-spacing: $letter-spacing-03;
+    text-transform: uppercase;
+
+    color: $hero-color;
+  }
+  .projects-title,
+  .command-title {
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: $font-bold;
+    font-size: $font-size-36;
+    line-height: $line-height-17;
+    text-align: center;
+    letter-spacing: $letter-spacing-03;
+  }
 }

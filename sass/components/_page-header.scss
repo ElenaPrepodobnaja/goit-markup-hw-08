@@ -101,15 +101,18 @@
   }
 }
 @media screen and(min-width:1000px) {
-  .heder-contact-nav {
+  .heder-contacts-nav {
     display: flex;
     align-items: center;
+    margin-left: 305px;
+    white-space: break-spaces;
   }
   .contact-item {
-    white-space: pre-wrap;
-    align-self: center;
     &:not(:last-child) {
-      margin-right: 10px;
+      margin-right: 30px;
     }
+  }
+  .heder-site-nav {
+    margin-right: 0;
   }
 }
