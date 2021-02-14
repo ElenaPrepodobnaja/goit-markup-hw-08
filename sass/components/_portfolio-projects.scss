@@ -25,7 +25,7 @@
 }
 @media screen and(min-width:1000px) {
   .project-li {
-    max-width: 370px;
+    width: calc((100% - 2 * 30px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
     &:nth-child(3n) {
