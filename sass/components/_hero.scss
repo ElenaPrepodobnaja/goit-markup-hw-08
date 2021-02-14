@@ -65,7 +65,7 @@
 }
 @media screen and (min-width: 1000px) {
   .hero-heading {
-    width: 380px;
+    width: 696px;
     margin-top: 0;
     margin-right: auto;
     margin-bottom: 30px;
@@ -113,6 +113,10 @@
   text-transform: uppercase;
 
   color: $hero-color;
+  @media screen and(min-width:1000px) {
+    font-size: 44px;
+    line-height: $line-height-36;
+  }
 }
 .hero-button {
   display: block;

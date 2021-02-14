@@ -506,7 +506,7 @@ label {
 
 @media screen and (min-width: 1000px) {
   .hero-heading {
-    width: 380px;
+    width: 696px;
     margin-top: 0;
     margin-right: auto;
     margin-bottom: 30px;
@@ -542,6 +542,13 @@ label {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1000px) {
+  .hero-name {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero-button {
@@ -597,15 +604,21 @@ label {
 }
 
 @media screen and (min-width: 1000px) {
+  .features {
+    padding: 94px 0;
+  }
   .features-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin: 0;
   }
   .features-list {
-    width: 270px;
     margin: 0;
+    width: calc((100% - 3 * 30px) / 4);
   }
   .features-list:not(:first-child) {
-    margin-left: 20px;
+    margin-left: 30px;
   }
 }
 
@@ -891,10 +904,13 @@ label {
     width: 170px;
     margin-bottom: 0;
   }
-}
-
-.clients:not(:last-child) {
-  margin-right: 30px;
+  :not(:last-child) {
+    margin-right: 30px;
+  }
+  .clients-item {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .clients-link {
@@ -1434,7 +1450,7 @@ label {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 370px;
+    width: 100%;
     height: 70px;
     padding: 27px 0;
     background: rgba(47, 48, 58, 0.8);
@@ -1590,6 +1606,13 @@ label {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .heder-auth-nav {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 

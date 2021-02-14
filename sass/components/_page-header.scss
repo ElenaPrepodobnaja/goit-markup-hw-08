@@ -99,6 +99,10 @@
 
     letter-spacing: $letter-spacing-02;
   }
+  @media screen and(min-width:1000px) {
+    font-size: 14px;
+    line-height: $line-height-14;
+  }
 }
 // @media screen and(min-width:700px) {
 //   &:not(:last-child) {

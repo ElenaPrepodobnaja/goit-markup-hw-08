@@ -23,14 +23,18 @@
 }
 
 @media screen and (min-width: 1000px) {
+  .features {
+    padding: 94px 0;
+  }
   .features-item {
+    display: flex;
     margin: 0;
   }
   .features-list {
-    width: 270px;
     margin: 0;
+    width: calc((100% - 3 * 30px) / 4);
     &:not(:first-child) {
-      margin-left: 20px;
+      margin-left: 30px;
     }
   }
 }

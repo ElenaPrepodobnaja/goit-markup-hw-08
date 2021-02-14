@@ -42,13 +42,17 @@
     }
     width: 226px;
   }
-  @media screen and(min-width:1000px) {
+}
+@media screen and(min-width:1000px) {
+  .clients {
     width: 170px;
-
     margin-bottom: 0;
   }
   &:not(:last-child) {
     margin-right: 30px;
+  }
+  .clients-item {
+    flex-wrap: nowrap;
   }
 }
 .clients-link {
