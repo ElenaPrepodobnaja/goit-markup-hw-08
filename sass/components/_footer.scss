@@ -7,7 +7,7 @@
   }
 }
 
-@media screen and (min-width: $tablet-width) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .footer-cont {
     display: flex;
     align-items: baseline;
@@ -160,7 +160,7 @@
   height: 24px;
   fill: $hero-color;
 }
-@media screen and (min-width: $tablet-width) {
+@media screen and (min-width: 768px) {
   .footer-cont {
     display: flex;
     align-items: baseline;
@@ -181,7 +181,7 @@
   }
 }
 
-@media screen and(min-width:1000px) {
+@media screen and (min-width: 1170px) {
   .container {
     display: flex;
     flex-wrap: wrap;

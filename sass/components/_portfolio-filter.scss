@@ -1,8 +1,6 @@
 .filter-section {
   padding-top: 60px;
   padding-bottom: 60px;
-  //    padding-top: 94px;
-  //   padding-bottom: 94px;
 }
 .filter {
   display: flex;
@@ -57,7 +55,7 @@
     box-shadow: $btn-shadow;
   }
 }
-@media screen and(min-width:1000px) {
+@media screen and(min-width:1170px) {
   .filter-section {
     padding-top: 94px;
     padding-bottom: 94px;

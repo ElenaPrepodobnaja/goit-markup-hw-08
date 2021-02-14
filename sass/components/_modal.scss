@@ -15,27 +15,31 @@
 
 .modal {
   position: absolute;
+
   padding: 40px;
   width: 450px;
   height: 609px;
   border-radius: 4px;
   background-color: $hero-color;
   box-shadow: $modal-shadow;
+
   @media screen and(max-width:480px) {
     top: 93px;
     left: 15px;
   }
-
-  @media screen and(min-widht:766px) {
-    .modal {
-      top: 208px;
-      left: 159px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
+  @media screen and(min-widht:768px) and(max-width:1024px) {
+    top: 208px;
+    left: 159px;
   }
 }
+
+// @media screen and(min-widht:1170px) {
+//   .modal {
+//     top: 221px;
+//     left: 480px;
+//     // transform: translate(-50%, -50%);
+//   }
+// }
 
 .button-modal {
   position: absolute;
