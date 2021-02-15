@@ -22,11 +22,15 @@
   bottom: 0;
   right: 0;
   padding: 40px;
-  width: 450px;
-  height: 609px;
+  width: 100%;
+  height: 100%;
   border-radius: 4px;
   background-color: $hero-color;
   box-shadow: $modal-shadow;
+  @media screen and(min-width:768px) {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 .button-modal {
