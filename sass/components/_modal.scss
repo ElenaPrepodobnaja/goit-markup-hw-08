@@ -14,29 +14,38 @@
 }
 
 .modal {
+  margin: auto;
   position: absolute;
 
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   padding: 40px;
   width: 450px;
   height: 609px;
   border-radius: 4px;
   background-color: $hero-color;
   box-shadow: $modal-shadow;
-
-  @media screen and(max-width:480px) {
-    top: 93px;
-    left: 15px;
-  }
-  @media screen and(min-widht:768px) and(max-width:1024px) {
-    top: 208px;
-    left: 159px;
-  }
 }
-
-// @media screen and(min-widht:1170px) {
+// @media screen and(max-width:480px) {
 //   .modal {
-//     top: 221px;
-//     left: 480px;
+//     top: 15%;
+//     left: 3%;
+//   }
+// }
+// @media screen and(max-widht:1024px) {
+//   .modal {
+//     top: 25%;
+//     left: 25%;
+//     // transform: translate(-25%, -25%);
+//   }
+// }
+
+// @media screen and(max-widht:1600px) {
+//   .modal {
+//     top: 50%;
+//     left: 50%;
 //     // transform: translate(-50%, -50%);
 //   }
 // }
