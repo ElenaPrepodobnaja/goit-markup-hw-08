@@ -8,7 +8,7 @@
 
   border: 1px solid $border-color;
   transition: box-shadow $transit-time $smooth-function;
-  @media screen and(max-width:900px) {
+  @media screen and(max-width:1024px) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }

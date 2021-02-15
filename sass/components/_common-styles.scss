@@ -1,48 +1,54 @@
 body {
-  font-family: $font-body;
-  font-weight: $font-normal;
-  font-size: $font-size-14;
-  line-height: $line-height-14;
-  letter-spacing: $letter-spacing-02;
+    font-family: $font-body;
+    font-weight: $font-normal;
+    font-size: $font-size-14;
+    line-height: $line-height-14;
+    letter-spacing: $letter-spacing-02;
 
-  background: $hero-color;
-  color: $title-text-color;
-  &.modal-open {
-    overflow: hidden;
-  }
+    background: $hero-color;
+    color: $title-text-color;
+    &.modal-open {
+        overflow: hidden;
+    }
 }
 ul {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
 }
 a {
-  display: block;
-  text-decoration: none;
+    display: block;
+    text-decoration: none;
 }
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
-.container {
-  max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 
-  @media screen and (min-width: 1170px) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
 
 .visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
